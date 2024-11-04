@@ -1,5 +1,10 @@
 import os
 
+"""
+实现需求：根据用户输入（盘符/数据大小/单位）筛选满足条件的文件
+并将文件路径保存至对应txt中
+"""
+
 
 def convert_size(size_bytes, unit):
     size_to_bytes = {'K': 1024, 'M': 1024 * 1024, 'G': 1024 * 1024 * 1024}
