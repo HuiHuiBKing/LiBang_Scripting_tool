@@ -57,9 +57,9 @@ for root, dirs, files in os.walk(current_directory):
             d9 = sheet["D9"].value
             if not d9:
                 d9 = sheet["C8"].value
-            d10 = sheet["C10"].value
-            if not d10:
-                d10 = sheet["E18"].value
+            f19 = sheet["F19"].value
+            if not f19:
+                f19 = sheet["E18"].value
             g13 = sheet["G13"].value
             if g13 == 0:
                 g13 = sheet["f12"].value
@@ -68,7 +68,7 @@ for root, dirs, files in os.walk(current_directory):
                 h18 = sheet["g17"].value
 
             # 将数据写入结果表
-            ws.append([ID, d5, d8, d7, d9, d10, g13, h18])
+            ws.append([ID, d5, d8, d7, d9, f19, g13, h18])
 
 # 保存结果表格
 wb.save(output_file)
